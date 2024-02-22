@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        
+     
+        <!-- Posts Filter Bar End -->
+
+        <!-- News Ticker Start -->
+
+         <div class="news--ticker">
+            <div class="container">
+                <div class="title">
+                    <h2>Son Dakika</h2>
+                </div>
+
+                <div class="news-updates--list" data-marquee="true">
+                    <ul class="nav">
+                        {% for entry in main_news %}
+                        <li>
+                            <h3 class="h3"><a href="#">{{ entry.title }}</a></h3>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- News Ticker End -->
+
+        <!-- Main Breadcrumb Start -->
+        <div class="main--breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="" class="btn-link"><i class="fa fm fa-home"></i>Home</a></li>
+                    <li class="active"><span>İletişim</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Main Breadcrumb End -->
+        
+        <!-- Main Content Section Start -->
+        <div class="main-content--section pbottom--30">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content Start -->
+                    <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">
+                        <div class="sticky-content-inner">
+                            <!-- Page Title Start -->
+                            <div class="page--title pd--30-0">
+                                <h2 class="h2">Kimden Duydun'a <span>Hoş Geldin</span></h2>
+
+                                <div class="content">
+                                    <p>KimdenDuydun olarak, demokratik bir toplumun temelinde bilgilendirilmiş bir halkın olduğuna inanıyoruz. </p>
+
+                                    <p>Misyonumuz size doğru, aydınlatıcı ve ilgi çekici haberler sunmak. Dürüstlük ve tarafsızlık ilkelerine dayanarak, dünyanın dinamizmini yansıtan güncel haberler, derinlemesine analizler ve çeşitli bakış açıları sunmaya kararlıyız.</p>
+                                </div>
+                            </div>
+                            <!-- Page Title End -->
+
+                            <!-- Contact Categories Start -->
+                            <div class="contact--cats pd--30-0">
+                                <ul class="nav row">
+                                    <li class="col-md-4 col-xs-6 col-xxs-12">
+                                        <a href="">
+                                            <div class="icon">
+                                                <img src="img/contact-img/icon-01.png" alt="">
+                                            </div>
+
+                                            <div class="title">
+                                                <h3 class="h5">Adres</h3>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3>Istanbul, Uskudar.</h3>
+                                                <p>Acibadem mah., Akasya Towers</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="col-md-4 col-xs-6 col-xxs-12">
+                                        <a href="">
+                                            <div class="icon">
+                                                <img src="img/contact-img/icon-02.png" alt="">
+                                            </div>
+
+                                            <div class="title">
+                                                <h3 class="h5">E-mail</h3>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3>info@kimdenduydun.com.tr</h3>
+                                                
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="col-md-4 col-xs-6 col-xxs-12">
+                                        <a href="">
+                                            <div class="icon">
+                                                <img src="img/contact-img/icon-03.png" alt="">
+                                            </div>
+
+                                            <div class="title">
+                                                <h3 class="h5">Tel</h3>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3>+90 216 000 00 00</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h1>Sorunuzu istediğiniz zaman bize gönderin!</h1>
+                            </div>
+                            <!-- Contact Categories End -->
+                            <div class="image">
+                                <img src="{% static 'assets/img/bg.png' %}" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Content End -->
+
+                    <!-- Main Sidebar Start -->
+                    <div class="main--sidebar col-md-4 col-sm-5 ptop--30 pbottom--30" data-sticky-content="true">
+                        <div class="sticky-content-inner">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <!-- Ad Widget Start -->
+                                <div class="ad--widget">
+                                    <a href="#">
+                                        <img src="{% static 'assets/img/ads-img/ad-300x250-1.jpg' %}" alt="">
+                                    </a>
+                                </div>
+                                <!-- Ad Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <div class="widget--title">
+                                    <h2 class="h4">Bağlantıda Kalın</h2>
+                                    <i class="icon fa fa-share-alt"></i>
+                                </div>
+
+                                <!-- Social Widget Start -->
+                                <div class="social--widget style--1">
+                                    <ul class="nav">
+                                        <li class="twitter">
+                                            <a href="https://twitter.com/kimden_duydun">
+                                                <span class="icon"><i class="fa fa-twitter"></i></span>
+                                                
+                                                <span class="title">Takip Et</span>
+                                            </a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="https://www.instagram.com/haberkimdenduydun/">
+                                                <span class="icon"><i class="fa fa-instagram"></i></span>
+                                                
+                                                <span class="title">Takip Et</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="youtube">
+                                            <a href="https://www.youtube.com/channel/UCBb_JmvHD3ryt34OieiCx_g">
+                                                <span class="icon"><i class="fa fa-youtube-square"></i></span>
+                                                
+                                                <span class="title">Abone Ol</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Social Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <div class="widget--title">
+                                    <h2 class="h4">Haber Postası</h2>
+                                    <i class="icon fa fa-envelope-open-o"></i>
+                                </div>
+
+                                <!-- Subscribe Widget Start -->
+                                <div class="subscribe--widget">
+                                    <div class="content">
+                                        <p>Alanınızda meydana gelen en son değişiklikleri, yenilikçi fikirleri ve araştırmaları takip edin. Haber bültenimizle her zaman bir adım önde olun.</p>
+                                    </div>
+
+                                    <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" data-form="mailchimpAjax">
+                                        <div class="input-group">
+                                            <input type="email" name="EMAIL" placeholder="E-mail adresi" class="form-control" autocomplete="off" required>
+
+                                            <div class="input-group-btn">
+                                                <button type="submit" class="btn btn-lg btn-default active"><i class="fa fa-paper-plane-o"></i></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="status"></div>
+                                    </form>
+                                </div>
+                                <!-- Subscribe Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+                    </div>
+                    <!-- Main Sidebar End -->
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Section End -->
+
+        {% endblock %}

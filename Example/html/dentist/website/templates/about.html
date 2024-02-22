@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+       
+
+       <!-- News Ticker Start -->
+
+       <div class="news--ticker">
+        <div class="container">
+            <div class="title">
+                <h2>Son Dakika</h2>
+            </div>
+
+            <div class="news-updates--list" data-marquee="true">
+                <ul class="nav">
+                    {% for entry in main_news %}
+                    <li>
+                        <h3 class="h3"><a href="#">{{ entry.title }}</a></h3>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- News Ticker End -->
+        <!-- Main Breadcrumb Start -->
+        <div class="main--breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="home-1.html" class="btn-link"><i class="fa fm fa-home"></i>Home</a></li>
+                    <li class="active"><span>Hakkımızda</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Main Breadcrumb End -->
+
+        <!-- Main Content Section Start -->
+        <div class="main-content--section pbottom--30">
+            <div class="container">
+                <!-- Main Content Start -->
+                <div class="main--content">
+                    <!-- Post Item Start -->
+                    <div class="post--item post--single pd--30-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="post--video embed-responsive embed-responsive-16by9">
+                                    <iframe src="https://www.youtube.com/embed/h29nDFsbNXs?si=cz57Sv6YNJnr5VF7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="post--info">
+                                    <div class="title">
+                                        <h2 class="h4">KimdenDuydun'a Hoş Geldiniz - Güvenilir Haber Kaynağınız</h2>
+                                    </div>
+                                </div>
+
+                                <div class="post--content">
+                                    <p>KimdenDuydun olarak, demokratik bir toplumun temelinde bilgilendirilmiş bir halkın olduğuna inanıyoruz. Misyonumuz size doğru, aydınlatıcı ve ilgi çekici haberler sunmak. Dürüstlük ve tarafsızlık ilkelerine dayanarak, dünyanın dinamizmini yansıtan güncel haberler, derinlemesine analizler ve çeşitli bakış açıları sunmaya kararlıyız.</p>
+
+                                    <h4>Dürüstlük Taahhüdümüz</h4>
+                    
+                                    </p>
+                                    <p> Dürüstlük işimizin temel taşıdır. Gazetecilik etiği ve mükemmelliği konusunda en yüksek standartlara bağlıyız. Yazı işleri ekibimiz, tüm bilgilerin titizlikle incelendiğinden ve güvenilir kanallardan temin edildiğinden emin olmak için hiç yorulmadan çalışıyor. Önyargı ve baskıdan uzak gazeteciliği savunarak okuyucularımızın mümkün olduğunca tarafsız haberler almasını sağlıyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Item End -->
+
+                    <!-- Info Blocks Start -->
+                    <div class="info--blocks ptop--30">
+                        <ul class="nav row">
+                            <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                                <!-- Info Block Start -->
+                                <div class="info--block">
+                                    <div class="icon text--color-1">
+                                        <i class="fa fa-dashboard"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3 class="h5">Amacımız</h3>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Haber tüketiminin şeklini yeniden tanımlamak, gerçek zamanlı, doğru ve etkili hikayeler sunarak. Bilgi ile bilgi arasındaki boşluğu kapatmayı hedefliyoruz, izleyicilerimizin bilinçli kararlar almasını sağlamak için onları güçlendiriyoruz.</p>
+                                    </div>
+                                </div>
+                                <!-- Info Block End -->
+                            </li>
+
+                            <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                                <!-- Info Block Start -->
+                                <div class="info--block">
+                                    <div class="icon text--color-1">
+                                        <i class="fa fa-cog"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3 class="h5">Vizyonumuz</h3>
+                                    </div>
+
+                                    <div class="content">İntegritenin teknolojik ilerleme ile buluştuğu yenilikçi gazetecilikte öncü bir ses olmak. Medya şeffaflığının ve erişilebilirliğinin aydınlanmış bir toplum için yol açtığı bir dünyayı hayal ediyoruz.</p>
+                                    </div>
+                                </div>
+                                <!-- Info Block End -->
+                            </li>
+
+                            <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                                <!-- Info Block Start -->
+                                <div class="info--block">
+                                    <div class="icon text--color-1">
+                                        <i class="fa fa-diamond"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3 class="h5">Misyonumuz</h3>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Önemli olan haberleri araştırmacı ve içgörülü bir şekilde sunmak olan misyonumuzdur. Keskin teknolojiyi ve korkusuz gazeteciliği kullanarak gerçeği ortaya çıkarmaya ve haber raporlamasında çıtayı yükseltmeye kendimizi adamış bulunmaktayız.</p>
+                                    </div>
+                                </div>
+                                <!-- Info Block End -->
+                            </li>
+
+                            <li class="col-md-3 col-xs-6 col-xxs-12 pbottom--30">
+                                <!-- Info Block Start -->
+                                <div class="info--block">
+                                    <div class="icon text--color-1">
+                                        <i class="fa fa-object-group"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3 class="h5">Hedeflerimiz</h3>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Global muhabirler ağını teşvik etmek, yerel içgörülerle küresel perspektif sağlamak, dijital haber alanında yenilik yaparak kullanıcı deneyimini artırmak ve gerçek ve ilerleme ortak değerleri etrafında bir topluluk oluşturmak için izleyicimizle etkileşime geçmek.</p>
+                                    </div>
+                                </div>
+                                <!-- Info Block End -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Info Blocks End -->
+                </div>
+                <!-- Main Content End -->
+            </div>
+        </div>
+        <!-- Main Content Section End -->
+
+        <!-- Counter Section Start -->
+        <div class="counter--section">
+            <div class="row gutter--0">
+                <div class="title">
+                <h2>EKİBİMİZ</h2></div>
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Counter Item Start -->
+                    <div class="counter--item odd bg--color-1">
+                        <img src="{% static 'assets/img/demo.jpg' %}" alt="Team Member" class="img-responsive">
+                       
+                        <div class="text">
+                            <h3>DEMİRCAN Değer</h3>
+                        </div>
+
+                        <div class="num">
+                            <h4><span data-trigger="counterUp">Yazı İşlerİ Müdürü</span></h4>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Counter Item Start -->
+                    <div class="counter--item even bg--color-1">
+                        <img src="{% static 'assets/img/k2.jpg' %}" alt="Team Member" class="img-responsive">
+
+                        <div class="text">
+                            <h3>MÜGE ABLAK</h3>
+                        </div>
+
+                        <div class="num">
+                            <h4><span data-trigger="counterUp">HALK ILE ILISKILER UZMANI</span></h4>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Counter Item Start -->
+                    <div class="counter--item odd bg--color-1">
+                        <img src="{% static 'assets/img/emre.jpg' %}" alt="Team Member" class="img-responsive">
+                       
+                        <div class="text">
+                            <h3>Emre Yener</h3>
+                        </div>
+
+                        <div class="num">
+                            <h4><span data-trigger="counterUp">CTO</span></h4>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Counter Item Start -->
+                    <div class="counter--item odd bg--color-1">
+                        <img src="{% static 'assets/img/k3.jpg' %}" alt="Team Member" class="img-responsive">
+                       
+                        <div class="text">
+                            <h3>Aslı Çİtlekcİ</h3>
+                        </div>
+
+                        <div class="num">
+                            <h4><span data-trigger="counterUp">İNSAN KAYNAKLARI UZMANI</span></h4>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- Counter Section End -->
+
+        <!-- Single Image Section Start -->
+        <div class="single-img--section ptop--30">
+            <div class="container">
+                <img src="img/about-img/peoples.jpg" alt="" class="center-block">
+            </div>
+        </div>
+        <!-- Single Image Section End -->
+
+        {% endblock %}
