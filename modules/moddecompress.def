@@ -1,0 +1,7 @@
+version:1.1
+
+priority.SEND_RESP_BODY:-3000
+priority.RECV_RESP_BODY:-3000
+priority.RCVD_RESP_BODY:-3000
+priority.HTTP_END:10
+priority.HANDLER_RESTART:10

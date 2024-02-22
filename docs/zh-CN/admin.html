@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>OpenLiteSpeed Users' Manual - Administration</title>
+  <meta name="description" content="OpenLiteSpeed Users' Manual - Administration." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../css/hdoc.css">
+</head>
+<body>
+<div class="pagewrapper clearfix"><aside class="sidetree ls-col-1-5">
+  <figure>
+    <img src="img/ols_logo.svg" alt="openlitespeed logo" width="150px"/>
+  </figure>
+  <h2 class="ls-text-thin">
+    OpenLiteSpeed Web Server <a href="index.html"> Users' Manual</a>
+  </h2>
+  <h3 class="ls-text-muted">Version 1.8 &nbsp;&#8212;&nbsp;Rev. 0</h3>
+  <hr/>
+  <div>
+    <ul>
+      <li><a href="license.html">License</a></li>
+      <li><a href="intro.html">Introduction</a></li>
+      <li><a href="install.html">Installation</a></li>
+      <li>
+        <span class="current"><a href="admin.html">Administration</a></span>
+        <ul class="level2">
+          <li><a href="ServerStat_Help.html">Service Manager</a></li>
+        </ul>
+      </li>
+      <li><a href="security.html">Security</a></li>
+      <li>
+        <a href="config.html">Configuration</a>
+        <ul class="level2">
+          <li><a href="ServGeneral_Help.html">Server General</a></li>
+          <li><a href="ServLog_Help.html">Server Log</a></li>
+          <li><a href="ServTuning_Help.html">Server Tuning</a></li>
+          <li><a href="ServSecurity_Help.html">Server Security</a></li>
+          <li><a href="ExtApp_Help.html">External Apps</a></li>
+          <ul class="level3">
+            <li><a href="External_FCGI.html">Fast CGI App</a></li>
+            <li><a href="External_FCGI_Auth.html">Fast CGI Authorizer</a></li>
+            <li><a href="External_LSAPI.html">LSAPI App</a></li>
+            <li><a href="External_Servlet.html">Servlet Engine</a></li>
+            <li><a href="External_WS.html">Web Server</a></li>
+            <li><a href="External_PL.html">Piped logger</a></li>
+            <li><a href="External_LB.html">Load Balancer</a></li>
+          </ul>
+          <li><a href="ScriptHandler_Help.html">Script Handler</a></li>
+          <li><a href="App_Server_Help.html">App Server Settings</a></li>
+          <li><a href="Module_Help.html">Module Configuration</a></li>
+          <li><a href="Listeners_General_Help.html">Listener General</a></li>
+          <li><a href="Listeners_SSL_Help.html">Listener SSL</a></li>
+          <li><a href="Templates_Help.html">Virtual Host Templates</a></li>
+          <li><a href="VirtualHosts_Help.html">Virtual Host Basic</a></li>
+          <li><a href="VHGeneral_Help.html">Virtual Host General</a></li>
+          <li><a href="VHSecurity_Help.html">Virtual Host Security</a></li>
+          <li><a href="VHSSL_Help.html">Virtual Host SSL</a></li>
+          <li><a href="Rewrite_Help.html">Rewrite</a></li>
+          <li><a href="Context_Help.html">Context</a></li>
+          <ul class="level3">
+            <li><a href="Static_Context.html">Static Context</a></li>
+            <li>
+              <a href="Java_Web_App_Context.html">Java Web App Context</a>
+            </li>
+            <li><a href="Servlet_Context.html">Servlet Context</a></li>
+            <li><a href="FCGI_Context.html">Fast CGI Context</a></li>
+            <li><a href="LSAPI_Context.html">LSAPI Context</a></li>
+            <li><a href="Proxy_Context.html">Proxy Context</a></li>
+            <li><a href="CGI_Context.html">CGI Context</a></li>
+            <li><a href="LB_Context.html">Load Balancer Context</a></li>
+            <li><a href="Redirect_Context.html">Redirect Context</a></li>
+            <li><a href="App_Server_Context.html">App Server Context</a></li>
+            <li><a href="Module_Context.html">Module Handler Context</a></li>
+          </ul>
+          <li><a href="VHWebSocket_Help.html">Web Socket Proxy</a></li>
+        </ul>
+      </li>
+      <li><a href="webconsole.html">Web Console</a>
+        <ul class="level2">
+          <li><a href="AdminGeneral_Help.html">Admin Console General</a></li>
+          <li><a href="AdminSecurity_Help.html">Admin Console Security</a></li>
+          <li>
+            <a href="AdminListeners_General_Help.html">
+              Admin Listener General
+            </a>
+          </li>
+          <li>
+            <a href="AdminListeners_SSL_Help.html">Admin Listener SSL</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</aside>
+<article class="contentwrapper ls-col-3-5 clearfix"><div class="nav-bar ls-spacer-micro-top"><div class="prev">&#171 <a href="install.html">Installation</a></div><div class="center"><a href="index.html">主页</a></div><div class="next"><a href="security.html">Security</a> &#187;</div></div>
+<h1>Administration</h1>
+
+<p>可以通过三种方式控制LiteSpeed Web服务器：通过WebAdmin控制台，从命令行或通过发送信号进行控制.</p> 
+
+<ol>
+<li><h3>通过WebAdmin控制台:</h3>
+<p>WebAdmin控制台是一个集中式控制面板，用于控制和配置所有LiteSpeed Web服务器设置.</p>
+<p>登录到WebAdmin控制台 (默认: http://[您的服务器IP]:7080/). 
+  选择“服务管理”,您将找到一个包含执行常见任务的控制面板的链接：
+重新启动服务器，重新加载服务器配置，查看日志，实时监控，
+虚拟主机重新加载，以及虚拟主机启用/禁用。</p> 
+<p><strong>有关如何通过WebAdmin控制台控制LiteSpeed Web Server的更多信息 - <a href="ServerStat_Help.html">服务管理</a></strong></p>
+<p>要更改WebAdmin界面的登录名和密码，请从shell运行以下命令:<br>
+	<span class="cmd">[your install dir]/admin/misc/admpass.sh</span> </p>
+</li>
+<li><h3>通过命令行界面:</h3>
+	<p>假设Web服务器安装在 /usr/local/lsws.</p>
+	<p>使用 <span class="tag">lswsctrl</span> /usr/local/lsws/bin/中的控制脚本. </p>
+	<p>启动Web服务器：<br>
+		<span class="cmd">/usr/local/lsws/bin/lswsctrl start</span>
+	</p>
+	<p>停止Web服务器:<br>
+		<span class="cmd">/usr/local/lsws/bin/lswsctrl stop</span>
+	</p>
+	<p>重启Web服务器:<br>
+		<span class="cmd">/usr/local/lsws/bin/lswsctrl restart</span>
+	</p>
+	<p>重新加载配置:<br>
+		<span class="cmd">/usr/local/lsws/bin/lswsctrl reload</span>
+	</p>
+</li>
+
+<li><h3>通过发送信号:</h3>
+	<p>您可以通过向服务器进程发送信号来停止服务器进程,重新加载配置。</p>
+	<p>首先，您需要知道服务器的进程ID，可以通过PID文件或通过运行 &quot;ps&quot; 命令.</p>
+	<p>读取PID文件:<br>
+		<span class="cmd">cat /tmp/lshttpd/lshttpd.pid</span></p>
+	<p>通过使用 &quot;ps&quot; 命令:<br>
+		FreeBSD: <span class="cmd">ps -x | grep lshttpd</span><br>
+		Others: <span class="cmd">ps -ef | grep lshttpd</span><br>
+		<br>
+		如果列出了多个进程，请使用PPID等于1的进程。
+	</p>
+	<p>停止Web服务器:
+		<span class="cmd">kill XXXX</span>
+		   (XXXX 是PID)<br>
+		如果服务器没有停止使用:
+		<span class="cmd">kill -9 XXXX</span>
+	</p>
+	<p>要重新加载配置，请使用:
+		<span class="cmd">kill -HUP XXXX</span>
+	</p>
+</li>
+</ol>
+</article><div  class="ls-col-1-1"><footer class="copyright">Copyright &copy; 2013-2020. <a href="https://www.litespeedtech.com">LiteSpeed Technologies Inc.</a> 版权所有.</footer>
+</div></div>
+</body>
+</html>

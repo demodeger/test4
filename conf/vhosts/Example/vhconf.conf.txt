@@ -1,0 +1,90 @@
+docroot $VH_ROOT/html/
+enablegzip 1
+
+errorlog $VH_ROOT/logs/error.log {
+    useserver 1
+    loglevel DEBUG
+    rollingsize 10M
+}
+
+accesslog $VH_ROOT/logs/access.log {
+    useserver 0
+    rollingsize 10M
+    keepdays 7
+    compressarchive 0
+}
+
+index  {
+    useserver 0
+    indexfiles index.html, index.php
+    autoindex 0
+    autoindexuri /_autoindex/default.php
+}
+
+errorpage 404 {
+    url /error404.html
+}
+
+expires  {
+    enableexpires 1
+}
+
+accesscontrol  {
+    allow *
+}
+
+realm SampleProtectedArea {
+
+    userdb  {
+        location conf/vhosts/Example/htpasswd
+        maxcachesize 200
+        cachetimeout 60
+    }
+
+    groupdb  {
+        location conf/vhosts/Example/htgroup
+        maxcachesize 200
+        cachetimeout 60
+    }
+}
+
+context /static/ {
+    location /usr/local/lsws/Example/html/dentist/static/
+    allowbrowse 1
+    adddefaultcharset off
+}
+
+context /media/ {
+    location /usr/local/lsws/Example/html/dentist/media/
+    allowbrowse 1
+    adddefaultcharset off
+}
+
+context / {
+    type appserver
+    location /usr/local/lsws/Example/html/dentist/
+    binpath /usr/local/lsws/fcgi-bin/lswsgi
+    apptype wsgi
+    startupfile dentist/wsgi.py
+    env PYTHONPATH=/usr/local/lsws/Example/html/lib/python3.10:/usr/local/lsws/Example/html/dentist
+    env LS_PYTHONBIN=/usr/local/lsws/Example/html/bin/python
+    adddefaultcharset off
+}
+
+rewrite  {
+    rules <<<MY_END
+rewritecond %{SERVER_PORT} 80
+rewriterule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    MY_END
+    enable 1
+    autoloadhtaccess 1
+    loglevel 0
+    unknownkeywords rewritecond %{SERVER_PORT} 80
+    unknownkeywords rewriterule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+}
+
+vhssl  {
+    keyfile /etc/letsencrypt/live/kimdenduydun.com.tr/privkey.pem
+    certfile /etc/letsencrypt/live/kimdenduydun.com.tr/fullchain.pem
+    certchain 1
+}

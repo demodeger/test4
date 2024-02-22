@@ -1,0 +1,87 @@
+docRoot                   $VH_ROOT/html/
+enableGzip                1
+
+errorlog $VH_ROOT/logs/error.log {
+  useServer               1
+  logLevel                DEBUG
+  rollingSize             10M
+}
+
+accesslog $VH_ROOT/logs/access.log {
+  useServer               0
+  rollingSize             10M
+  keepDays                7
+  compressArchive         0
+}
+
+index  {
+  useServer               0
+  indexFiles              index.html, index.php
+  autoIndex               0
+  autoIndexURI            /_autoindex/default.php
+}
+
+errorpage 404 {
+  url                     /error404.html
+}
+
+expires  {
+  enableExpires           1
+}
+
+accessControl  {
+  allow                   *
+}
+
+realm SampleProtectedArea {
+
+  userDB  {
+    location              conf/vhosts/Example/htpasswd
+    maxCacheSize          200
+    cacheTimeout          60
+  }
+
+  groupDB  {
+    location              conf/vhosts/Example/htgroup
+    maxCacheSize          200
+    cacheTimeout          60
+  }
+}
+
+context /static/ {
+  location                /usr/local/lsws/Example/html/dentist/static/
+  allowBrowse             1
+  addDefaultCharset       off
+}
+
+context /media/ {
+  location                /usr/local/lsws/Example/html/dentist/media/
+  allowBrowse             1
+  addDefaultCharset       off
+}
+
+context / {
+  type                    appserver
+  location                /usr/local/lsws/Example/html/dentist/
+  binPath                 /usr/local/lsws/fcgi-bin/lswsgi
+  appType                 wsgi
+  startupFile             dentist/wsgi.py
+  env                     PYTHONPATH=/usr/local/lsws/Example/html/lib/python3.10:/usr/local/lsws/Example/html/dentist
+  env                     LS_PYTHONBIN=/usr/local/lsws/Example/html/bin/python
+  addDefaultCharset       off
+}
+
+rewrite  {
+  enable                  1
+  autoLoadHtaccess        1
+  logLevel                0
+RewriteCond %{SERVER_PORT} 80
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+}
+
+vhssl  {
+  keyFile                 /etc/letsencrypt/live/kimdenduydun.com.tr/privkey.pem
+  certFile                /etc/letsencrypt/live/kimdenduydun.com.tr/fullchain.pem
+  certChain               1
+}
+

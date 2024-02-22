@@ -1,0 +1,429 @@
+2024-01-10 06:52:18.709 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2024-01-20 16:56:17.716 [STDERR] Traceback (most recent call last):
+2024-01-20 16:56:17.717 [STDERR]   File "/usr/local/lsws/Example/html/dentist/dentist/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+2024-01-20 16:56:17.717 [STDERR]     django.setup(set_prefix=False)
+2024-01-20 16:56:17.717 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+2024-01-20 16:56:17.717 [STDERR]     apps.populate(settings.INSTALLED_APPS)
+2024-01-20 16:56:17.717 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/registry.py", line 91, in populate
+2024-01-20 16:56:17.717 [STDERR]     app_config = AppConfig.create(entry)
+2024-01-20 16:56:17.717 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/config.py", line 193, in create
+2024-01-20 16:56:17.717 [STDERR]     import_module(entry)
+2024-01-20 16:56:17.717 [STDERR]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-01-20 16:56:17.717 [STDERR]     return _bootstrap._gcd_import(name[level:], package, level)
+2024-01-20 16:56:17.717 [STDERR]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-01-20 16:56:17.717 [STDERR]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-01-20 16:56:17.718 [STDERR]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-01-20 16:56:17.718 [STDERR]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-01-20 16:56:17.718 [STDERR]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-01-20 16:56:17.718 [STDERR]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-01-20 16:56:17.718 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/tinymce/__init__.py", line 14, in <module>
+2024-01-20 16:56:17.718 [STDERR]     from .models import HTMLField
+2024-01-20 16:56:17.718 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/tinymce/models.py", line 6, in <module>
+2024-01-20 16:56:17.718 [STDERR]     from .widgets import TinyMCE, AdminTinyMCE
+2024-01-20 16:56:17.718 [STDERR]   File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/tinymce/widgets.py", line 17, in <module>
+2024-01-20 16:56:17.718 [STDERR]     from django.utils.encoding import smart_text
+2024-01-20 16:56:17.718 [STDERR] ImportError: cannot import name 'smart_text' from 'django.utils.encoding' (/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/encoding.py)
+2024-01-25 18:38:05.220 [STDERR] [UID:65534][666] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 20:31:36.100 [STDERR] [UID:65534][3886] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 20:57:09.694 [STDERR] [UID:65534][3930] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 21:30:05.122 [STDERR] [UID:65534][4005] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 21:40:43.632 [STDERR] [UID:65534][4084] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 21:40:43.691 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-01-25 22:13:13.710 [STDERR] [UID:65534][5134] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 23:09:27.160 [STDERR] [UID:65534][5246] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-25 23:59:59.574 [STDERR] [UID:65534][5354] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 00:15:31.134 [STDERR] [UID:65534][6010] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 01:34:49.523 [STDERR] [UID:65534][6116] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 02:10:41.415 [STDERR] [UID:65534][6217] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 02:21:33.670 [STDERR] [UID:65534][6244] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 03:48:25.771 [STDERR] [UID:65534][6432] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 05:54:06.375 [STDERR] [UID:65534][6600] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 06:06:20.829 [STDERR] [UID:65534][6607] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 06:58:19.750 [STDERR] [UID:65534][12908] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 07:10:04.174 [STDERR] [UID:65534][12937] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 07:33:39.100 [STDERR] [UID:65534][13019] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 08:16:22.620 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-01-26 08:25:24.664 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-01-26 08:39:27.482 [STDERR] [UID:65534][13500] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 08:54:31.592 [STDERR] [UID:65534][13520] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 09:16:49.592 [STDERR] [UID:65534][13565] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 09:48:10.577 [STDERR] [UID:65534][13690] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 10:11:45.206 [STDERR] [UID:65534][14401] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 10:29:37.100 [STDERR] [UID:65534][15289] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 11:34:25.963 [STDERR] [UID:65534][17055] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 12:02:09.600 [STDERR] [UID:65534][17144] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 12:17:01.926 [STDERR] [UID:65534][17372] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 13:00:04.100 [STDERR] [UID:65534][17666] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 13:20:47.834 [STDERR] [UID:65534][17735] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 13:57:47.882 [STDERR] [UID:65534][17882] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 14:23:29.950 [STDERR] [UID:65534][18156] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 14:35:07.542 [STDERR] [UID:65534][18361] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 15:12:26.563 [STDERR] [UID:65534][18862] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 15:47:34.154 [STDERR] [UID:65534][19367] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 15:48:17.370 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-01-26 16:00:27.203 [STDERR] [UID:65534][19437] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 16:17:05.217 [STDERR] [UID:65534][19487] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 16:43:04.707 [STDERR] [UID:65534][19739] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 18:22:02.162 [STDERR] [UID:65534][20467] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 19:25:25.515 [STDERR] [UID:65534][20780] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 20:13:56.587 [STDERR] [UID:65534][20988] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 21:05:56.761 [STDERR] [UID:65534][21346] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 21:40:48.183 [STDERR] [UID:65534][21978] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 22:53:12.169 [STDERR] [UID:65534][22166] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-26 23:36:53.517 [STDERR] [UID:65534][22541] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 00:39:33.558 [STDERR] [UID:65534][22884] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 00:42:48.601 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-01-27 01:29:42.611 [STDERR] [UID:65534][23078] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 02:44:29.144 [STDERR] [UID:65534][23564] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 03:05:52.961 [STDERR] [UID:65534][23887] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 03:58:50.101 [STDERR] [UID:65534][24637] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-01-27 04:19:32.817 [STDERR] [UID:65534][24835] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 00:19:11.541 [STDERR] [UID:65534][808] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 00:42:38.860 [STDERR] [UID:65534][1393] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 00:54:23.427 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-11 01:26:58.135 [STDERR] [UID:65534][655] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 02:39:45.518 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-11 05:11:00.564 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-11 06:14:34.426 [STDERR] [UID:65534][3413] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 06:39:59.146 [STDERR] [UID:65534][3463] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 07:16:56.170 [STDERR] [UID:65534][3515] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 08:21:01.149 [STDERR] [UID:65534][3683] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 08:36:49.601 [STDERR] [UID:65534][3738] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 10:49:35.439 [STDERR] [UID:65534][4174] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 11:10:35.635 [STDERR] [UID:65534][4244] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 11:10:35.694 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-11 11:25:05.991 [STDERR] [UID:65534][4271] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 11:59:38.953 [STDERR] [UID:65534][4491] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 12:17:49.555 [STDERR] [UID:65534][4583] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 12:51:44.826 [STDERR] [UID:65534][4739] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-11 13:37:45.100 [STDERR] [UID:65534][5338] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 12:19:22.940 [STDERR] [UID:65534][541] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 12:29:37.121 [STDERR] [UID:65534][770] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 12:34:07.424 [STDERR] [UID:65534][512] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 13:26:14.752 [STDERR] [UID:65534][8090] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 13:47:01.353 [STDERR] [UID:65534][8128] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 13:59:38.449 [STDERR] [UID:65534][8257] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 14:32:17.971 [STDERR] [UID:65534][8616] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 14:58:27.587 [STDERR] [UID:65534][8825] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 15:35:06.794 [STDERR] [UID:65534][8967] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 15:49:25.314 [STDERR] [UID:65534][9003] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 16:11:07.284 [STDERR] [UID:65534][9034] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 16:36:37.661 [STDERR] [UID:65534][9062] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 17:31:35.295 [STDERR] [UID:65534][9147] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 17:45:33.703 [STDERR] [UID:65534][9175] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 18:06:17.598 [STDERR] [UID:65534][9197] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 18:25:53.593 [STDERR] [UID:65534][9431] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 18:38:41.257 [STDERR] [UID:65534][9525] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 18:51:23.100 [STDERR] [UID:65534][9655] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 19:16:35.922 [STDERR] [UID:65534][10164] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 19:33:04.100 [STDERR] [UID:65534][10316] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 20:05:21.567 [STDERR] [UID:65534][10516] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 20:29:54.842 [STDERR] [UID:65534][10857] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 21:02:13.883 [STDERR] [UID:65534][11763] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 21:31:53.624 [STDERR] [UID:65534][11808] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 23:03:10.160 [STDERR] [UID:65534][12380] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-13 23:43:08.267 [STDERR] [UID:65534][12483] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 01:11:23.117 [STDERR] [UID:65534][13080] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 01:58:50.436 [STDERR] [UID:65534][13427] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 02:55:36.457 [STDERR] [UID:65534][13569] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 04:54:18.805 [STDERR] [UID:65534][14999] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 05:01:35.100 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-14 05:12:16.629 [STDERR] [UID:65534][15095] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 06:38:07.409 [STDERR] [UID:65534][15686] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 07:21:17.889 [STDERR] [UID:65534][15852] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 07:44:01.100 [STDERR] [UID:65534][15958] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 08:00:11.100 [STDERR] [UID:65534][16012] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 08:22:28.662 [STDERR] [UID:65534][16051] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 09:10:45.931 [STDERR] [UID:65534][16159] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 09:31:34.350 [STDERR] [UID:65534][16267] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 09:44:59.549 [STDERR] [UID:65534][16334] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 09:55:51.992 [STDERR] [UID:65534][16373] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 09:55:53.863 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-14 10:27:59.446 [STDERR] [UID:65534][16512] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 11:01:16.100 [STDERR] [UID:65534][16602] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 11:31:31.821 [STDERR] [UID:65534][16658] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 11:53:53.105 [STDERR] [UID:65534][16778] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 12:27:39.163 [STDERR] [UID:65534][16913] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 12:55:01.583 [STDERR] [UID:65534][16975] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 13:12:17.398 [STDERR] [UID:65534][17002] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 13:56:55.707 [STDERR] [UID:65534][17105] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 14:36:28.484 [STDERR] [UID:65534][17466] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 14:58:55.215 [STDERR] [UID:65534][18032] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 15:57:41.100 [STDERR] [UID:65534][18645] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 17:10:04.100 [STDERR] [UID:65534][19120] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 17:29:38.657 [STDERR] [UID:65534][19144] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 18:12:48.125 [STDERR] [UID:65534][20289] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 18:25:48.275 [STDERR] [UID:65534][20523] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 18:42:41.812 [STDERR] [UID:65534][20707] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 19:54:01.732 [STDERR] [UID:65534][21460] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 20:46:19.508 [STDERR] [UID:65534][21814] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 22:00:32.585 [STDERR] [UID:65534][22334] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 23:41:59.759 [STDERR] [UID:65534][22522] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-14 23:53:38.103 [STDERR] [UID:65534][22538] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 00:11:48.678 [STDERR] [UID:65534][22657] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 01:24:54.607 [STDERR] [UID:65534][23782] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 01:30:10.656 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-15 02:07:33.460 [STDERR] [UID:65534][23954] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 02:58:58.637 [STDERR] [UID:65534][24395] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 03:15:50.165 [STDERR] [UID:65534][24452] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 03:29:19.184 [STDERR] [UID:65534][24490] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 04:08:12.505 [STDERR] [UID:65534][25178] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 04:30:05.100 [STDERR] [UID:65534][25257] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 04:47:50.163 [STDERR] [UID:65534][25469] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 06:41:20.466 [STDERR] [UID:65534][27222] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 07:34:51.982 [STDERR] [UID:65534][27642] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 07:53:56.317 [STDERR] [UID:65534][28227] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 08:04:46.961 [STDERR] [UID:65534][28708] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 08:21:46.769 [STDERR] [UID:65534][29490] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 08:54:18.996 [STDERR] [UID:65534][30118] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 09:27:27.275 [STDERR] [UID:65534][30278] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 11:11:48.669 [STDERR] [UID:65534][30750] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 11:44:31.276 [STDERR] [UID:65534][30895] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 11:55:30.710 [STDERR] [UID:65534][30923] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 12:13:25.100 [STDERR] [UID:65534][31029] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 12:32:03.620 [STDERR] [UID:65534][31075] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 12:37:24.499 [STDERR] [UID:65534][31101] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 13:13:59.147 [STDERR] [UID:65534][32252] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 15:00:23.324 [STDERR] [UID:65534][35024] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 15:28:21.350 [STDERR] [UID:65534][35312] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 16:01:29.883 [STDERR] [UID:65534][35743] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 16:34:10.100 [STDERR] [UID:65534][35969] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 16:56:39.805 [STDERR] [UID:65534][36184] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 17:11:39.214 [STDERR] [UID:65534][36273] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 18:00:14.831 [STDERR] [UID:65534][36594] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 18:48:00.798 [STDERR] [UID:65534][36886] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 19:22:36.617 [STDERR] [UID:65534][37059] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 19:47:04.877 [STDERR] [UID:65534][37139] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 20:07:43.197 [STDERR] [UID:65534][37292] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 21:23:36.258 [STDERR] [UID:65534][38351] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 21:36:35.100 [STDERR] [UID:65534][38832] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 21:57:42.144 [STDERR] [UID:65534][39863] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 22:20:23.347 [STDERR] [UID:65534][40264] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 22:39:37.361 [STDERR] [UID:65534][40482] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 23:10:21.887 [STDERR] [UID:65534][41334] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-15 23:22:54.623 [STDERR] [UID:65534][41539] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 00:13:34.540 [STDERR] [UID:65534][41791] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 00:27:11.120 [STDERR] [UID:65534][41960] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 01:44:51.534 [STDERR] [UID:65534][43947] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 02:07:14.352 [STDERR] [UID:65534][44040] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 02:27:39.100 [STDERR] [UID:65534][44261] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 02:43:12.909 [STDERR] [UID:65534][44497] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 02:56:33.792 [STDERR] [UID:65534][44536] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 03:31:13.705 [STDERR] [UID:65534][44731] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 03:43:53.745 [STDERR] [UID:65534][44974] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 04:36:43.892 [STDERR] [UID:65534][45927] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 05:04:38.100 [STDERR] [UID:65534][46422] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 05:50:51.961 [STDERR] [UID:65534][47065] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 06:22:19.683 [STDERR] [UID:65534][47132] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 06:33:21.232 [STDERR] [UID:65534][47152] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 06:54:13.280 [STDERR] [UID:65534][47266] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 07:22:18.867 [STDERR] [UID:65534][47313] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 08:08:49.534 [STDERR] [UID:65534][47374] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 08:41:22.352 [STDERR] [UID:65534][47486] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 09:16:29.100 [STDERR] [UID:65534][47645] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 09:41:05.963 [STDERR] [UID:65534][47918] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 10:04:07.454 [STDERR] [UID:65534][48094] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 10:41:05.137 [STDERR] [UID:65534][48498] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 11:04:56.585 [STDERR] [UID:65534][48635] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 11:28:04.725 [STDERR] [UID:65534][48725] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 11:28:04.797 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-16 11:46:42.781 [STDERR] [UID:65534][48765] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 12:15:31.760 [STDERR] [UID:65534][48827] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 12:19:44.683 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-16 12:54:26.367 [STDERR] [UID:65534][49922] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 13:54:58.751 [STDERR] [UID:65534][50697] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 14:13:54.640 [STDERR] [UID:65534][50731] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 14:49:43.598 [STDERR] [UID:65534][50793] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 15:02:31.451 [STDERR] [UID:65534][50814] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 15:50:43.430 [STDERR] [UID:65534][51597] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 16:12:49.261 [STDERR] [UID:65534][52019] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 17:08:49.395 [STDERR] [UID:65534][53584] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 17:38:13.838 [STDERR] [UID:65534][53728] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 18:09:56.589 [STDERR] [UID:65534][53859] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 18:53:35.674 [STDERR] [UID:65534][53957] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 19:18:09.135 [STDERR] [UID:65534][54017] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 19:40:38.990 [STDERR] [UID:65534][54276] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 19:57:01.633 [STDERR] [UID:65534][54569] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 20:27:12.610 [STDERR] [UID:65534][54807] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 20:44:27.851 [STDERR] [UID:65534][54868] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 21:06:21.149 [STDERR] [UID:65534][54936] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 21:49:53.697 [STDERR] [UID:65534][55063] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 22:42:29.208 [STDERR] [UID:65534][55432] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 23:14:07.140 [STDERR] [UID:65534][56081] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 23:25:06.250 [STDERR] [UID:65534][56289] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-16 23:47:25.383 [STDERR] [UID:65534][56452] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 00:18:14.720 [STDERR] [UID:65534][56640] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 00:44:23.749 [STDERR] [UID:65534][56732] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 01:28:49.101 [STDERR] [UID:65534][57518] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 02:11:12.100 [STDERR] [UID:65534][57637] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 02:30:49.542 [STDERR] [UID:65534][57890] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 03:05:04.719 [STDERR] [UID:65534][58281] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 03:19:33.298 [STDERR] [UID:65534][58577] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 03:36:15.253 [STDERR] [UID:65534][58926] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 03:57:44.810 [STDERR] [UID:65534][59155] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 04:27:29.989 [STDERR] [UID:65534][59307] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 04:50:51.718 [STDERR] [UID:65534][59633] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 06:11:41.268 [STDERR] [UID:65534][61120] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 06:23:04.316 [STDERR] [UID:65534][61142] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 07:16:25.817 [STDERR] [UID:65534][62332] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 08:52:57.433 [STDERR] [UID:65534][63297] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 09:03:34.683 [STDERR] [UID:65534][63629] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 10:18:08.999 [STDERR] [UID:65534][64478] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 11:02:01.552 [STDERR] [UID:65534][64848] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 11:12:26.759 [STDERR] [UID:65534][64915] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 12:28:49.617 [STDERR] [UID:65534][65301] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 12:47:55.792 [STDERR] [UID:65534][65339] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 12:47:55.874 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-17 12:59:06.663 [STDERR] [UID:65534][65362] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 13:17:12.423 [STDERR] [UID:65534][65401] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 13:51:45.853 [STDERR] [UID:65534][66243] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 14:18:18.982 [STDERR] [UID:65534][67169] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 15:12:56.566 [STDERR] [UID:65534][68038] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 15:48:23.229 [STDERR] [UID:65534][68209] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 16:43:11.606 [STDERR] [UID:65534][68317] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 17:24:11.136 [STDERR] [UID:65534][68709] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 17:55:04.694 [STDERR] [UID:65534][69342] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 18:19:14.471 [STDERR] [UID:65534][69432] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 18:47:28.307 [STDERR] [UID:65534][69640] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 19:34:14.680 [STDERR] [UID:65534][70048] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 19:55:24.644 [STDERR] [UID:65534][70148] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 20:11:28.710 [STDERR] [UID:65534][70360] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 20:26:33.100 [STDERR] [UID:65534][70525] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 20:42:56.121 [STDERR] [UID:65534][70648] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 21:12:17.438 [STDERR] [UID:65534][71174] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 21:46:32.630 [STDERR] [UID:65534][71330] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 22:07:38.834 [STDERR] [UID:65534][71355] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 22:22:51.100 [STDERR] [UID:65534][71391] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 22:41:43.757 [STDERR] [UID:65534][71429] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 22:57:10.100 [STDERR] [UID:65534][71467] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 23:07:50.952 [STDERR] [UID:65534][71542] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-17 23:23:54.559 [STDERR] [UID:65534][71685] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 00:00:16.132 [STDERR] [UID:65534][72163] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 00:30:28.526 [STDERR] [UID:65534][72350] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 01:07:59.620 [STDERR] [UID:65534][72478] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 01:53:45.198 [STDERR] [UID:65534][72621] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 02:04:16.471 [STDERR] [UID:65534][72636] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 02:18:17.724 [STDERR] [UID:65534][72672] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 02:52:50.906 [STDERR] [UID:65534][72736] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 03:34:30.644 [STDERR] [UID:65534][73388] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 03:51:20.777 [STDERR] [UID:65534][73746] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 04:47:05.100 [STDERR] [UID:65534][74546] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 05:14:05.508 [STDERR] [UID:65534][74643] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 05:56:18.777 [STDERR] [UID:65534][74877] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 06:08:07.417 [STDERR] [UID:65534][74885] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 06:32:18.634 [STDERR] [UID:65534][74937] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 06:55:15.998 [STDERR] [UID:65534][75061] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 07:41:21.305 [STDERR] [UID:65534][75259] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 08:07:31.896 [STDERR] [UID:65534][75333] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 08:40:16.736 [STDERR] [UID:65534][75407] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 09:08:07.371 [STDERR] [UID:65534][75478] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 09:37:15.351 [STDERR] [UID:65534][75529] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 09:56:28.446 [STDERR] [UID:65534][75564] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 10:51:53.293 [STDERR] [UID:65534][76139] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 11:25:34.100 [STDERR] [UID:65534][76523] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 11:55:13.576 [STDERR] [UID:65534][76656] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 12:16:25.117 [STDERR] [UID:65534][76717] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 13:01:25.230 [STDERR] [UID:65534][77206] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 13:01:25.299 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-18 13:41:42.100 [STDERR] [UID:65534][77579] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 13:46:24.873 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-18 14:00:25.245 [STDERR] [UID:65534][77710] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 14:19:57.519 [STDERR] [UID:65534][77780] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 14:35:01.139 [STDERR] [UID:65534][77885] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 14:58:07.423 [STDERR] [UID:65534][78711] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 16:45:15.115 [STDERR] [UID:65534][80329] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 17:25:56.847 [STDERR] [UID:65534][80453] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 18:24:57.395 [STDERR] [UID:65534][80533] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 19:05:19.766 [STDERR] [UID:65534][80626] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 19:45:11.457 [STDERR] [UID:65534][80877] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 20:02:55.922 [STDERR] [UID:65534][80925] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 21:28:33.340 [STDERR] [UID:65534][81159] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 22:12:02.955 [STDERR] [UID:65534][81558] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 22:26:30.554 [STDERR] [UID:65534][81719] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-18 22:59:32.550 [STDERR] [UID:65534][81826] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 00:09:40.100 [STDERR] [UID:65534][82492] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 00:57:37.739 [STDERR] [UID:65534][82553] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 01:15:08.253 [STDERR] [UID:65534][82586] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 01:34:06.100 [STDERR] [UID:65534][82609] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 02:15:55.100 [STDERR] [UID:65534][82748] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 02:27:37.498 [STDERR] /usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/list.py:91: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'website.models.Post'> QuerySet.
+  return self.paginator_class(
+2024-02-19 03:00:35.945 [STDERR] [UID:65534][82820] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 03:12:37.893 [STDERR] [UID:65534][83034] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 03:32:35.710 [STDERR] [UID:65534][83554] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 03:56:02.783 [STDERR] [UID:65534][84147] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 04:17:08.251 [STDERR] [UID:65534][84375] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 04:52:11.548 [STDERR] [UID:65534][84750] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 06:00:35.317 [STDERR] [UID:65534][85586] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 06:12:54.363 [STDERR] [UID:65534][85640] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 06:30:37.100 [STDERR] [UID:65534][85725] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 07:54:36.806 [STDERR] [UID:65534][86481] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 08:23:07.606 [STDERR] [UID:65534][86526] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 09:08:54.567 [STDERR] [UID:65534][86578] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 10:07:10.848 [STDERR] [UID:65534][86904] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 11:48:27.158 [STDERR] [UID:65534][87261] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 12:13:33.995 [STDERR] [UID:65534][87360] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 13:11:01.506 [STDERR] [UID:65534][88960] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 13:35:52.766 [STDERR] [UID:65534][89354] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 13:51:48.686 [STDERR] [UID:65534][89813] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 14:20:44.986 [STDERR] [UID:65534][90361] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 14:32:00.371 [STDERR] [UID:65534][90396] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 14:53:22.577 [STDERR] [UID:65534][90509] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 15:17:32.485 [STDERR] [UID:65534][90733] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 16:17:28.100 [STDERR] [UID:65534][91011] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 16:32:51.327 [STDERR] [UID:65534][91026] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 17:30:50.630 [STDERR] [UID:65534][91588] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 18:13:22.608 [STDERR] [UID:65534][91693] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 18:29:11.100 [STDERR] [UID:65534][91731] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 19:38:12.504 [STDERR] [UID:65534][91910] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 20:35:09.396 [STDERR] [UID:65534][92038] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 20:48:25.847 [STDERR] [UID:65534][92068] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 21:03:30.981 [STDERR] [UID:65534][92090] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 21:18:18.684 [STDERR] [UID:65534][92293] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 21:38:05.626 [STDERR] [UID:65534][92599] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 21:52:04.904 [STDERR] [UID:65534][92838] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 22:05:35.841 [STDERR] [UID:65534][93044] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 22:25:40.100 [STDERR] [UID:65534][93381] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 23:18:00.863 [STDERR] [UID:65534][94181] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 23:31:43.694 [STDERR] [UID:65534][94348] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-19 23:54:10.983 [STDERR] [UID:65534][94484] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 00:14:54.702 [STDERR] [UID:65534][94593] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 00:45:34.487 [STDERR] [UID:65534][94751] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 01:22:16.714 [STDERR] [UID:65534][94908] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 02:39:04.230 [STDERR] [UID:65534][95280] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 02:56:05.135 [STDERR] [UID:65534][95357] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 03:26:05.173 [STDERR] [UID:65534][95501] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 04:19:51.484 [STDERR] [UID:65534][95642] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 05:04:24.326 [STDERR] [UID:65534][95694] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 05:43:23.100 [STDERR] [UID:65534][95759] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 06:01:07.480 [STDERR] [UID:65534][95775] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 06:24:26.507 [STDERR] [UID:65534][95891] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 06:57:03.633 [STDERR] [UID:65534][95951] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 07:51:16.712 [STDERR] [UID:65534][96683] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 08:16:06.153 [STDERR] [UID:65534][96727] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 08:32:55.873 [STDERR] [UID:65534][96741] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 08:57:08.953 [STDERR] [UID:65534][96783] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 09:11:38.100 [STDERR] [UID:65534][96809] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 09:28:23.372 [STDERR] [UID:65534][96832] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 10:04:17.759 [STDERR] [UID:65534][96881] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 10:15:15.397 [STDERR] [UID:65534][96907] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied
+2024-02-20 10:33:15.263 [STDERR] [UID:65534][96926] Failed to open custom stderr log:/usr/local/lsws/Example/html/dentist/stderr.log: Permission denied

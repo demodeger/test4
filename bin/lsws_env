@@ -1,0 +1,2 @@
+PIDFILE=/tmp/lshttpd/lshttpd.pid
+GRACEFUL_PIDFILE=/tmp/lshttpd/graceful.pid

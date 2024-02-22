@@ -1,0 +1,30 @@
+version:1.64
+
+param.enableCache	0	15
+param.enablePrivateCache	1	15
+param.checkPublicCache	2	15
+param.checkPrivateCache	3	15
+param.qsCache	4	15
+param.reqCookieCache	5	15
+param.ignoreReqCacheCtrl	6	15
+param.ignoreRespCacheCtrl	7	15
+param.respCookieCache	8	15
+param.expireInSeconds	9	15
+param.privateExpireInSeconds	10	15
+param.maxStaleAge	11	15
+param.maxCacheObjSize	12	15
+param.storagepath	13	15
+param.noCacheDomain	14	15
+param.noCacheUrl	15	15
+param.no-vary	16	15
+param.addEtag	17	15
+param.purgeUri	18	15
+param.reqHeaderVary	19	15
+param.CacheKeyModify	20	15
+priority.HTTP_BEGIN:-10
+priority.URI_MAP:-10
+priority.HTTP_END:31
+priority.HANDLER_RESTART:31
+priority.RECV_RESP_HEADER:31
+priority.RCVD_RESP_BODY:31
+priority.SEND_RESP_BODY:31

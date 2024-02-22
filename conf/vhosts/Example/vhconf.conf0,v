@@ -1,0 +1,364 @@
+head	1.7;
+access;
+symbols;
+locks
+	root:1.7; strict;
+comment	@# @;
+
+
+1.7
+date	2024.01.25.18.48.43;	author root;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2024.01.25.18.45.04;	author root;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2024.01.20.16.17.33;	author root;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2024.01.10.07.04.49;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2024.01.10.06.39.40;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2023.11.19.08.07.44;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2023.11.19.08.06.03;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@/usr/local/lsws/conf/vhosts/Example/vhconf.conf0
+@
+
+
+1.7
+log
+@Update
+@
+text
+@docRoot                   $VH_ROOT/html/
+enableGzip                1
+
+errorlog $VH_ROOT/logs/error.log {
+  useServer               1
+  logLevel                DEBUG
+  rollingSize             10M
+}
+
+accesslog $VH_ROOT/logs/access.log {
+  useServer               0
+  rollingSize             10M
+  keepDays                7
+  compressArchive         0
+}
+
+index  {
+  useServer               0
+  indexFiles              index.html, index.php
+  autoIndex               0
+  autoIndexURI            /_autoindex/default.php
+}
+
+errorpage 404 {
+  url                     /error404.html
+}
+
+expires  {
+  enableExpires           1
+}
+
+accessControl  {
+  allow                   *
+}
+
+realm SampleProtectedArea {
+
+  userDB  {
+    location              conf/vhosts/Example/htpasswd
+    maxCacheSize          200
+    cacheTimeout          60
+  }
+
+  groupDB  {
+    location              conf/vhosts/Example/htgroup
+    maxCacheSize          200
+    cacheTimeout          60
+  }
+}
+
+context /static/ {
+  location                /usr/local/lsws/Example/html/dentist/static/
+  allowBrowse             1
+  addDefaultCharset       off
+}
+
+context /media/ {
+  location                /usr/local/lsws/Example/html/dentist/media/
+  allowBrowse             1
+  addDefaultCharset       off
+}
+
+context / {
+  type                    appserver
+  location                /usr/local/lsws/Example/html/dentist/
+  binPath                 /usr/local/lsws/fcgi-bin/lswsgi
+  appType                 wsgi
+  startupFile             dentist/wsgi.py
+  env                     PYTHONPATH=/usr/local/lsws/Example/html/lib/python3.10:/usr/local/lsws/Example/html/dentist
+  env                     LS_PYTHONBIN=/usr/local/lsws/Example/html/bin/python
+  addDefaultCharset       off
+}
+
+rewrite  {
+  enable                  1
+  autoLoadHtaccess        1
+  logLevel                0
+RewriteCond %{SERVER_PORT} 80
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+}
+
+vhssl  {
+  keyFile                 /etc/letsencrypt/live/kimdenduydun.com.tr/privkey.pem
+  certFile                /etc/letsencrypt/live/kimdenduydun.com.tr/fullchain.pem
+  certChain               1
+}
+
+@
+
+
+1.6
+log
+@Update
+@
+text
+@d51 2
+a52 2
+context /media/ {
+  location                /usr/local/lsws/Example/html/dentist/media/
+d57 2
+a58 2
+context /staticfiles/ {
+  location                /usr/local/lsws/Example/html/dentist/staticfiles/
+@
+
+
+1.5
+log
+@Update
+@
+text
+@d57 6
+a71 14
+}
+
+context /staticfiles/ {
+  location                /usr/local/lsws/Example/html/dentist/staticfiles/
+  allowBrowse             1
+
+  rewrite  {
+
+  }
+  addDefaultCharset       off
+
+  phpIniOverride  {
+
+  }
+@
+
+
+1.4
+log
+@Update
+@
+text
+@a56 6
+context /static/ {
+  location                /usr/local/lsws/Example/html/dentist/static/
+  allowBrowse             1
+  addDefaultCharset       off
+}
+
+d66 14
+@
+
+
+1.3
+log
+@Update
+@
+text
+@d51 8
+a58 2
+context /.well-known/ {
+  location                /usr/local/lsws/Example/html/.well-known/
+d65 1
+a65 1
+  location                /usr/local/lsws/Example/html/demo/
+d68 2
+a69 2
+  startupFile             demo/wsgi.py
+  env                     PYTHONPATH=/usr/local/lsws/Example/html/lib/python3.10:/usr/local/lsws/Example/html/demo
+a77 1
+  rules                   <<<END_rules 
+a79 1
+  END_rules
+d83 5
+a87 4
+            keyFile                 /etc/letsencrypt/live/kimdenduydun.com.tr/privkey.pem
+            certFile                /etc/letsencrypt/live/kimdenduydun.com.tr/fullchain.pem
+            certChain               1
+        }
+@
+
+
+1.2
+log
+@Update
+@
+text
+@d72 4
+d78 5
+@
+
+
+1.1
+log
+@Update
+@
+text
+@d1 2
+a2 2
+docRoot $VH_ROOT/html/
+enableGzip 1
+d4 4
+a7 7
+
+context / {
+  allowBrowse 1
+  location $DOC_ROOT/
+  rewrite  {
+    RewriteFile .htaccess
+  }
+d10 5
+a14 3
+context /docs/{
+  allowBrowse 1
+  location $SERVER_ROOT/docs/
+d17 5
+a21 11
+context /protected/{
+  required user test
+  authName Protected
+  allowBrowse 1
+  location protected/
+  realm SampleProtectedArea
+
+  accessControl {
+    deny 
+    allow *
+  }
+d24 2
+a25 2
+context /blocked/{
+  allowBrowse 0
+d28 2
+a29 4
+context /cgi-bin/{
+  allowBrowse 1
+  location $VH_ROOT/cgi-bin/
+  type cgi
+d32 2
+a33 2
+expires {
+  enableExpires 1
+d36 1
+a36 6
+index {
+  autoIndexURI /_autoindex/default.php
+  indexFiles index.html
+  autoIndex 0
+  useServer 0
+}
+d38 5
+a42 3
+errorPage 404{
+  url /error404.html
+}
+d44 5
+a48 4
+errorlog $VH_ROOT/logs/error.log{
+  logLevel DEBUG
+  rollingSize 10M
+  useServer 1
+d51 4
+a54 7
+accessLog $VH_ROOT/logs/access.log{
+  compressArchive 0
+  logReferer 1
+  keepDays 30
+  rollingSize 10M
+  logUserAgent 1
+  useServer 0
+d57 9
+a65 8
+awstats {
+  updateInterval 86400
+  workingDir $VH_ROOT/awstats
+  updateOffset 0
+  siteDomain localhost
+  siteAliases 127.0.0.1 localhost
+  updateMode 0
+  awstatsURI /awstats/
+d68 4
+a71 3
+rewrite {
+  enable 0
+  logLevel 0
+a73 30
+hotlinkCtrl {
+  suffixes gif,  jpeg,  jpg
+  allowedHosts
+  allowDirectAccess 1
+  enableHotlinkCtrl 0
+  onlySelf 1
+}
+
+accessControl {
+  deny
+  allow *
+}
+
+realm SampleProtectedArea {
+  userDB {
+    cacheTimeout 60
+    maxCacheSize 200
+    location conf/vhosts/$VH_NAME/htpasswd
+  }
+
+  groupDB {
+    cacheTimeout 60
+    maxCacheSize 200
+    location conf/vhosts/$VH_NAME/htgroup
+  }
+}
+
+general {
+  enableContextAC 0
+}
+@
